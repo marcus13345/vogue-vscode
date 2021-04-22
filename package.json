@@ -1,0 +1,25 @@
+{
+    "name": "vogue",
+    "displayName": "Vogue",
+    "description": "Vogue Language Support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "vogue",
+            "aliases": ["Vogue", "vogue"],
+            "extensions": [".v"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "vogue",
+            "scopeName": "main.v",
+            "path": "./syntaxes/vogue.tmLanguage.json"
+        }]
+    }
+}
