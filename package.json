@@ -14,12 +14,16 @@
             "id": "vogue",
             "aliases": ["Vogue", "vogue"],
             "extensions": [".v"],
+            "filenames": [".v"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
             "language": "vogue",
-            "scopeName": "main.v",
-            "path": "./syntaxes/vogue.tmLanguage.json"
+            "scopeName": "source.vogue",
+            "path": "./syntaxes/vogue.tmLanguage.json",
+            "embeddedLanguages": {
+                "source.js": "javescript"
+            }
         }]
     }
 }

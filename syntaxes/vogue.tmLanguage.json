@@ -7,13 +7,32 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#inlinejs"
 		}
 	],
 	"repository": {
+		"inlinejs": {
+				"begin": "\\[\\[",
+				"beginCaptures": {
+						"0": { "name": "begin.brace.nearley" }
+				},
+				"end": "\\]\\]",
+				"endCaptures": {
+						"0": { "name": "end.brace.nearley" }
+				},
+				"name": "source.js.embedded.nearley",
+				"patterns": [
+						{
+								"include": "source.js"
+						}
+				]
+		},
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.vogue",
-				"match": "\\b(if|while|for|return|global|function|link)\\b"
+				"match": "\\b(namespace|required|restore|link)\\b"
 			}]
 		},
 		"strings": {
