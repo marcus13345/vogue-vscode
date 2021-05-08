@@ -22,7 +22,7 @@
             "scopeName": "source.vogue",
             "path": "./syntaxes/vogue.tmLanguage.json",
             "embeddedLanguages": {
-                "source.js": "javescript"
+                "source.js": "javascript"
             }
         }]
     }

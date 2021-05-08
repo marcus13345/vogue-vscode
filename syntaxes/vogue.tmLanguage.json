@@ -6,45 +6,45 @@
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
+			"include": "#inlinejs"
 		},
 		{
-			"include": "#inlinejs"
+			"include": "#strings"
 		}
 	],
 	"repository": {
 		"inlinejs": {
-				"begin": "\\[\\[",
-				"beginCaptures": {
-						"0": { "name": "begin.brace.nearley" }
-				},
-				"end": "\\]\\]",
-				"endCaptures": {
-						"0": { "name": "end.brace.nearley" }
-				},
-				"name": "source.js.embedded.nearley",
-				"patterns": [
-						{
-								"include": "source.js"
-						}
-				]
-		},
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.vogue",
-				"match": "\\b(namespace|required|restore|link)\\b"
-			}]
+			"begin": "(\\[\\[|{)",
+			"beginCaptures": {
+				"0": { "name": "source.js.embedded" }
+			},
+			"end": "(\\]\\]|})",
+			"endCaptures": {
+				"0": { "name": "source.js.embedded" }
+			},
+			"name": "source.js.embedded",
+			"patterns": [
+				{
+					"include": "source.js"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.vogue",
-			"begin": "\"",
-			"end": "\"",
+			"begin": "'",
+			"end": "'",
 			"patterns": [
 				{
 					"name": "constant.character.escape.vogue",
 					"match": "\\\\."
 				}
 			]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.vogue",
+				"match": "\\b(namespace|required|restore|link|singleton|keepalive|import|as)\\b"
+			}]
 		}
 	},
 	"scopeName": "source.vogue"
