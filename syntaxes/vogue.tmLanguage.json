@@ -43,7 +43,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.vogue",
-				"match": "\\b(namespace|required|restore|link|singleton|keepalive|import|as)\\b"
+				"match": "\\b(namespace|required|restore|link|singleton|keepalive|import|as|member|runtime|static)\\b"
 			}]
 		}
 	},

@@ -1,5 +1,6 @@
 {
     "name": "vogue",
+    "publisher": "valnet",
     "displayName": "Vogue",
     "description": "Vogue Language Support",
     "version": "0.0.1",
