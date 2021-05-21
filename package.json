@@ -10,6 +10,9 @@
     "categories": [
         "Programming Languages"
     ],
+    "repository": {
+        "url": "https://github.com/marcus13345/vogue-vscode"
+    },
     "contributes": {
         "languages": [{
             "id": "vogue",
